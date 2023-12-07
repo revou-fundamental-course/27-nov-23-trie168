@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Katik</title>
+</head>
+<body>
+    <h1 class="judul">Selamat Datang</h1>
+    <p class="subjudul">Ini adalah mini projek sederhana untuk menghitung luas dan keliling segitiga</p>
+    <main>
+        <section>
+          <div class="card">
+              <div>
+                  <h2 class="luas-segitiga">Luas Segitiga</h2>
+                 </div>
+                <div class="img">
+                  <img src="img/segitiga.jpeg" alt="segitiga" />
+                </div>
+                <p>Rumus Luas Segitiga (L = 1/2 * a * t)</p>
+                <div>
+                  <p>Di mana :</p>
+                  <p>L = Luas</p>
+                  <p>a = Panjang Alas</p>
+                  <p>t = Tinggi</p><br>
+                </div>
+                <div class="form-hitung">
+                  <hr><br>
+                  <h1 class="form-hitung-luas">Hitung Luas Segitiga</h1>
+                  <form action="" class="form-place">
+                     
+                       <input type="number" id="alas-s" name="alas-s" placeholder="Masukkan Alas"><br>
+                       
+                       <input type="number" id="tinggi-s" name="tinggi-s" placeholder="Masukkan Tinggi"><br>
+                       
+                       <input type="text" id="luas-s" name="luas-s" readonly placeholder="Hasil"><br>
+                  </form>
+                  <input class="button-hasil" type="button" value="Hitung" onclick="hitungLuasSegitiga()">
+                  <input class="button-reset" type="reset" value="Reset" onclick="resetForm()">
+
+                </div>
+          </div>
+        </section>
+        <section>
+          <div class="card">
+              <div>
+                  <h2 class="keliling-segitiga">Keliling Segitiga</h2>
+                 </div>
+                <div class="img">
+                  <img src="img/segitiga.jpeg" alt="segitiga" />
+                </div>
+                <p>Rumus Keliling Segitiga (K = S1 * S2 * S3)</p>
+                
+                <div>
+                  <p>Di mana :</p>
+                  <p>K = Keliling</p>
+                  <p>S1 = Sisi A </p>
+                  <p>S2 = Sisi B</p>
+                  <p>S3 = Sisi C </p><br>
+                </div>
+                <div class="form-hitung">
+                  <hr><br>
+                  <h1 class="form-hitung-luas">Hitung Keliling Segitiga</h1>
+                  <form action="" class="form-place">
+                       
+                       <input type="number" id="sisi-a" name="sisi-a" placeholder="Sisi A"><br>
+                      
+                       <input type="number" id="sisi-b" name="sisi-b" placeholder="Sisi B"><br>
+                       
+                       <input type="number" id="sisi-c" name="sisi-c" placeholder="Sisi C"><br>
+                       
+                       <input type="text" id="keliling-s" name="keliling-s" readonly placeholder="Hasil"><br>
+                  </form>
+                  <input class="button-hasil" type="button" value="Hitung" onclick="hitungKelilingSegitiga()">
+                  <input class="button-reset" type="reset" value="Reset" onclick="resetForm()">
+                </div>
+          </div>
+        </section>
+      </main>
+      <script src="js/script.js"></script>
+</body>
+</html>
